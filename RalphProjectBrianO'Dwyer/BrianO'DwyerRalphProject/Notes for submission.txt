@@ -1,0 +1,23 @@
+Notes for submission:
+
+The two scripts and enemy prefabs are in a folder in Assets called RALPH PROJECt.
+The ability to die and the ability to kill enemies has been turned off for this demonstration because of a bug.
+I had intended on using the whole thing as my project, which I am, I would like to let you know though that I cleaned up loads of it, made it all physics2D, separated out function to audioManager and SpawnManager out of the GameManager, and introduced events instead of all the static variables and bools..  Didn't quite get it all working and had to abandon ship in order to get the FSM enemy done.
+
+The FSM enemy works, except you may want to comment out the invokation to the IEnumerator "Ins1_1" in Spawner(); or InvokeSpawner() in the gameManager or more easily twiddle the layermask in the FSM code on the raycasters as  the small green enemies are causing the FSM to not be able to show off its function because it just chases them when the raycasts hit them. 
+
+The flocking is an adaption of the code from 
+medevelopment.tutsplus.com/series/understanding-steering-behaviors--gamedev-12732
+it was written in Flash and I put it into C#
+
+The State machine enemy I make myself from scratch, I tried to get wander working but I couldn't in the end, it kept moving in one direction. I was using a coroutine to get new steer directions.. 
+At the moment I have another type of wander instead where it moves for a few seconds in whatever direction it's pointing, it then stops and rotates to a new direction and so on and so forth.
+
+Been at this for the last 15 hrs &_&  .. and the day before that too. 
+and non stop since about seven!............................................................
+
+I have about 20 different versions of the same project now as well. 
+
+Funny stuff haha
+Learned a lot anyway.   
+Cheers! 
